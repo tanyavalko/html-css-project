@@ -1,0 +1,16 @@
+{
+  "name": "siteboom",
+  "version": "1.0.0",
+  "description": "Theme",
+  "author": "siteboom",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "each-async": "^1.1.1",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-scss": "^1.4.0",
+    "node-sass": "^4.9.3"
+  }
+}

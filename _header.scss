@@ -1,0 +1,342 @@
+.main-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('/img/bg.png');
+    background-position: 51% 95%;
+    &__logo{
+
+    }
+    &__top-panel{
+    margin-top: 68px;
+    margin-bottom: 169px;
+    display: flex;
+    justify-content: space-between;
+    }
+    &__menu{
+    padding-top: 6px;
+    padding-bottom: 12px;
+    }
+    &__content{
+        display: flex;
+        padding: 82px 0 80px 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        margin-bottom: 168px;
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        width: 50%;
+    }
+    &__right{
+        position: relative;
+        width: 50%;
+    }
+    &__title {
+        font-size: 60px;
+        line-height: 36px;
+        color: #fefefe;
+        font-family: "League Gothic";
+        margin-bottom: 12px;
+    }
+    &__subtitle {
+        color: #edbfff;
+        font-size: 32px;
+        font-family: "League Gothic";
+        margin-bottom: 16px;
+    }
+    &__text {
+        font-size: 18px;
+        font-family: sans-serif;
+        max-width: 500px;
+        width: 100%;
+        line-height: 1.3;
+    }
+    &__wrap{
+        display: flex; 
+    }
+    &__img-player{
+        position: absolute;
+        top: 22%;
+        right: 135px;
+        z-index: 2;
+    }
+    &__img-iPhone{
+        position: absolute;
+        top: -43%;
+        right: 76px;
+        z-index: 1;
+    }
+    &__img-second{
+        position: absolute;
+        left: 129px;
+        top: -21px;
+    }   
+}
+.menu {
+    &__link{
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+        color: #ffffff;
+        font-family: "League Gothic";
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 34px;
+        text-transform: uppercase;
+        margin-right: 40px;
+        padding: 0 5px;
+        position: relative;
+        transition: all .3s;
+        &:last-child{
+            margin-right: 0;
+        }
+        &:hover {
+            &:after{
+                content: '';
+                position: absolute;
+                left: 0; 
+                bottom: -5px;
+                display: block;
+                background-color: #edbfff;
+                width: 100%;
+                height: 2px;
+            }
+            
+        }
+    }
+}
+
+.about-company{
+    background-image: linear-gradient(0deg, #322539 0%, #745083 100%);
+    padding: 80px 0 70px;
+    &__info{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__box{
+        display: flex; 
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+        max-width: 238px;
+        width: 100%;
+    }
+    &__title{
+        font-size: 30px;
+        line-height: 24px;
+        color: #ffffff;
+        font-family: "League Gothic";
+        filter: drop-shadow(0.5px 0.866px 0px #0f1518);
+        text-transform: uppercase;
+        margin-bottom: 14px;
+    }
+    &__text{
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+        font-family: sans-serif;
+        font-weight: 300;
+        filter: drop-shadow(0.5px 0.866px 0px #0f1518);
+        margin-bottom: 15px;
+    }
+    &__link{
+        font-size: 18px;
+        line-height: 24px;
+        color: #ffffff;
+        font-family: "League Gothic";
+        filter: drop-shadow(0.5px 0.866px 0px #0f1518);
+        text-transform: uppercase;
+        text-align: right;
+        padding-right: 12px;
+        &:hover{
+            filter: drop-shadow(0 0 4px rgba(255,255,255,0.8));
+        }
+    }
+    &__icon{
+        height: 43px;
+        width: 43px;
+        background-image: url(img/sprite.png);
+        margin-right: 12px;
+        &--first {
+            background-position: -403px -145px;
+        }
+        &--second {
+            background-position: -323px -268px;
+        }
+        &--third {
+            background-position: -475px -8px;
+        }
+    }
+}
+
+.main-middle{
+    background-color: #f9f9f9;
+    &__top{
+        padding-top: 100px;
+        padding-bottom: 74px;
+        padding-left: 23px;
+        display: flex;
+       
+    }
+    &__review{
+        filter: drop-shadow(0px 1px 1px rgba(0,0,0,0.05));
+        max-width: 424px;
+        width: 100%;
+        background-color: #fff;
+        box-sizing: border-box;
+        padding: 32px 28px 38px 37px;
+        position: relative;
+        &:after{
+            content: '';
+            position: absolute;
+            right: 40px;
+            bottom: -19px;
+            border-top: 20px solid #fff; 
+	        border-left: 20px solid transparent;
+            height: 0;
+            width: 0;
+        }
+    }
+    &__title{
+        font-size: 30px;
+        line-height: 24px;
+        color: #454545;
+        font-family: "League Gothic";
+        filter: drop-shadow(0.5px 0.866px 0px #ffffff);
+        text-transform: uppercase;
+        padding-bottom: 9px;
+        &--pink{
+            color: #edbfff;
+        }
+    }
+    &__text{
+        font-size: 16px;
+        line-height: 24px;
+        color: #454545;
+        font-family: sans-serif;
+        font-weight: 300;
+        filter: drop-shadow(0.5px 0.866px 0px #ffffff);
+    }
+    &__icon {
+        position: absolute;
+        left: -33px;
+        top: 9px;    
+        height: 60px;
+        width: 60px;
+        background-image: url(img/sprite.png);
+        margin-right: 12px;
+        background-position: 0 611px;
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+    }
+    &__buttons{
+        display: flex;
+        padding-left: 166px;
+        margin-top: 22px;
+    }
+    &__btn {
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        box-sizing: border-box;
+        background-color: #fff;
+        filter: drop-shadow(1px 1.732px 0px #ffffff);
+        border: 1px solid #e6e6e6;
+        margin-right: 5px;
+        cursor: pointer;
+        &--active {
+            &:after {
+                content: '';
+                position: absolute;
+                left: 2px;
+                top: 2px;
+                width: 11px;
+                height: 11px;
+                border-radius: 50%;
+                box-sizing: border-box;
+                background-image: linear-gradient(0deg, #454545 0%, #6a6a6a 100%);
+                border: 1px solid #454545;
+            }
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__right {
+        padding-top: 29px;
+        padding-left: 56px;
+    }
+    &__heading{
+        font-size: 30px;
+        line-height: 24px;
+        color: #454545;
+        font-family: "League Gothic";
+        filter: drop-shadow(0.5px 0.866px 0px #ffffff);
+        text-transform: uppercase;
+        margin-bottom: 19px;
+    }
+    &-item{
+        display: flex;
+        margin-bottom: 16px;
+        &__text {
+            margin-left: 17px;
+        }
+        &__title{
+            font-size: 16px;
+            line-height: 24px;
+            color: #454545;
+            font-family: sans-serif;
+            font-weight: 800;
+            letter-spacing: 0.6px;
+            filter: drop-shadow(0.5px 0.866px 0px #ffffff);
+        }
+        &__subtitle{
+            font-size: 16px;
+            line-height: 24px;
+            color: #454545;
+            font-family: sans-serif;
+            font-weight: 300;
+            filter: drop-shadow(0.5px 0.866px 0px #ffffff);
+        } 
+        &__icon {  
+            height: 50px;
+            width: 52px;
+            background-image: url(img/sprite.png);
+            //margin-right: 12px;
+            &--first {
+                background-position: -213px -319px;
+            }
+            &--second {
+                background-position: -142px -379px;
+            }
+            &--third {
+                background-position: -71px -436px;
+            }
+        }
+    }
+    &__link{
+        font-size: 18px;
+        line-height: 24px;
+        color: #454545;
+        font-family: "League Gothic";
+        filter: drop-shadow(0.5px 0.866px 0px #ffffff);
+        text-transform: uppercase;
+        display: block;
+        padding-right: 15px;
+        text-align: right;
+    }
+    &__bottom{
+        border-top: 1px solid #fff;
+        outline: 1px solid rgb(167, 165, 165);
+        border-bottom: 1px solid #fff;
+        outline: 1px solid rgb(167, 165, 165);
+    }
+    &__brands{
+        margin-left: 89px;
+        margin-top: 23px;
+    }
+}
